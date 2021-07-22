@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
   s.osx.frameworks = 'Cocoa'
 
   s.static_framework = false
+  s.build_type = Pod::BuildType.dynamic_framework
   
   s.library = 'c++'
   s.pod_target_xcconfig = {
